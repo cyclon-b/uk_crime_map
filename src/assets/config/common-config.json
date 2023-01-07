@@ -1,0 +1,19 @@
+{
+  "mainMenuItems": [
+    {
+      "label": "Crimes by categories",
+      "icon": "pi pi-briefcase",
+      "url": ""
+    },
+    {
+      "label": "Crimes by investigation status",
+      "icon": "pi pi-file-edit",
+      "url": "/status"
+    },
+    {
+      "label": "About",
+      "icon": "pi pi-file-edit",
+      "url": "/about"
+    }
+  ]
+}
