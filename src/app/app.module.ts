@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgxsModule } from '@ngxs/store';
 import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 import { environment } from '../environment/environment';
+import { CommonConfigState } from './shared/states/common-config.state';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,13 @@ import { environment } from '../environment/environment';
     AppRoutingModule,
     LayoutModule,
     HttpClientModule,
-    NgxsModule.forRoot([],
+    NgxsModule.forRoot([CommonConfigState],
       {
-        developmentMode: !environment.production
+        developmentMode: !environment.production,
       }),
-    NgxsReduxDevtoolsPluginModule.forRoot()
+    NgxsReduxDevtoolsPluginModule.forRoot({
+      disabled: environment.production,
+    })
   ],
   providers: [],
   bootstrap: [ AppComponent ]

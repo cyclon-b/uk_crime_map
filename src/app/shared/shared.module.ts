@@ -4,19 +4,20 @@ import { TabMenuModule } from 'primeng/tabmenu';
 import { CheckboxModule } from 'primeng/checkbox';
 import { ButtonModule } from 'primeng/button';
 import { GMapModule } from 'primeng/gmap';
+import { MenubarModule } from 'primeng/menubar';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    TabMenuModule,
+    MenubarModule,
     CheckboxModule,
     ButtonModule,
     GMapModule,
   ],
   exports: [
-    TabMenuModule,
+    MenubarModule,
     CheckboxModule,
     ButtonModule,
     GMapModule,

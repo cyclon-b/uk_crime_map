@@ -1,1 +1,7 @@
-<p-tabMenu></p-tabMenu>
+<p-menubar *ngIf="menuItems$" [model]="menuItems$ | async">
+  <ng-template pTemplate="start">
+   <h2 class="ukc-logo">UK Crimes Map</h2>
+  </ng-template>
+
+</p-menubar>
+
